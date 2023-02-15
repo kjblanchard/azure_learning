@@ -27,21 +27,3 @@ resource "azurerm_virtual_network" "virtual_network" {
     owner     = "core"
   })
 }
-
-
-# var.cidrs
-
-# prod = {
-#   cidr     = ["10.10.10.0/24"]
-#   location = "us-east"
-#   subnets = {
-#     PrivateA = "10.10.10.0/26"
-#     PrivateB = "10.10.10.64/26"
-#     PublicA  = "10.10.10.128/26"
-#     PublicB  = "10.10.10.190/26"
-#   }
-#   tags = {
-#     environment = "prod"
-#     superman    = "nou"
-#   }
-# }
