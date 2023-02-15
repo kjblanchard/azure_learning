@@ -11,6 +11,7 @@ resource "azurerm_consumption_budget_subscription" "example" {
   amount     = 10
   time_grain = "Monthly"
 
+
   time_period {
     start_date = "2023-02-01T00:00:00Z"
     end_date   = "2025-02-01T00:00:00Z"
