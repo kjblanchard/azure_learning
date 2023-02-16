@@ -2,6 +2,8 @@
 https://developer.hashicorp.com/terraform/language/resources/syntax#operation-timeouts
 - Network takes a map of objects representing any amount of virtual networks and subnets, and creates the subnets and vnets
 - Transit module takes the virtual network module and then creates network attachments for each in the virtual wan, as well as a dynamic route table
+- Todo for transit - do a foreach loop similar to network module, so that we can add the vnet->transit route
+- Quick read on some basic info : https://arsenvlad.medium.com/mapping-aws-iam-concepts-to-similar-ones-in-azure-c31ed7906abb
 
 Basic terraform.tfvars should be passed in containing all the networks that should be created.
 ```
