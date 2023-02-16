@@ -10,13 +10,25 @@ variable "billing" {
 
 variable "virtual_networks" {
   type = map(object({
-    name = string
-    cidr = list(string)
+    name     = string
+    cidr     = list(string)
     location = string
-    subnets = map(string)
-    tags = map(string)
+    subnets  = map(string)
+    tags     = map(string)
 
   }))
   description = "All virtual networks/subnets that need to be created should be stored here."
+}
+
+variable "transit_virtual_network" {
+  type = object({
+    name     = string
+    cidr     = list(string)
+    location = string
+    subnets  = map(string)
+    tags     = map(string)
+
+  })
+  description = "The transit cidr that should be created."
 }
 
