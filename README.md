@@ -1,9 +1,9 @@
 - azure ad module contains for_each from a csv file,testing timeouts block, and azuread provider.
 https://developer.hashicorp.com/terraform/language/resources/syntax#operation-timeouts
-- Network takes a map of objects representing a network, and creates the subnets and vnet
+- Network takes a map of objects representing any amount of virtual networks and subnets, and creates the subnets and vnets
 - Transit module takes the virtual network module and then creates network attachments for each in the virtual wan, as well as a dynamic route table
 
-Basic terraform.tf vars should be passed in containing all the networks that should be created.
+Basic terraform.tfvars should be passed in containing all the networks that should be created.
 ```
 billing = {
   default_emails = [
